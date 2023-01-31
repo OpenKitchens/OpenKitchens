@@ -31,12 +31,15 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+const EventHandling = {
+  data() {
+    return {
+      msg: 'Hello Vue.js!'
+    }
   }
 }
+
+Vue.createApp(msg).mount('.hello')
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
